@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mediscope AI – Voice Assistance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="logo.png" class="nav-logo" alt="Mediscope AI">
+      <div class="nav-title">Mediscope AI</div>
+    </div>
+
+    <nav class="nav-links">
+      <a class="nav-link" href="ui.html">Home</a>
+      <a class="nav-link" href="chat.html">Chatbot</a>
+      <a class="nav-link" href="voice.html">Voice Assiance</a>
+    </nav>
+
+    <button class="nav-right-btn">⚙</button>
+  </header>
+
+  <!-- VOICE ASSIST UI -->
+  <main class="voice-page">
+    <section class="voice-shell" id="voice">
+      <div class="voice-screen">
+
+        <div class="voice-top">
+          <span class="voice-status" id="voiceStatus">Live</span>
+          <span class="voice-sub">Talking to Mediscope AI</span>
+        </div>
+
+        <div class="voice-gradient">
+          <div class="voice-wave"></div>
+        </div>
+
+        <div class="voice-info">
+          <div class="voice-title">AI Doctor Call</div>
+          <div class="voice-desc">
+            Describe your symptoms, lab report or medicines. 
+            Mediscope AI will respond with voice.
+          </div>
+        </div>
+
+        <div class="voice-controls">
+          <button class="voice-btn voice-pause" id="voiceToggle">
+            ⏸
+          </button>
+          <button class="voice-btn voice-end">
+            ✖
+          </button>
+        </div>
+
+        <div class="voice-handle"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
